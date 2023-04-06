@@ -25,6 +25,13 @@
     },
     "autoload-dev": {},
     "scripts": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HyveKeycloakRules\\TokenGuard"
+            ]
+        }
+    },
     "require-dev": {
         "laravel/framework": "^9.12"
     },

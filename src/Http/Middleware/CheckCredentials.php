@@ -26,7 +26,7 @@ class TokenGuard extends ParentTokenGuard implements Guard, GuardContract
         return $this->check();
     }
 
-    public function check()
+    private function check()
     {
         dd(Auth::getAllRules());
 
@@ -34,7 +34,6 @@ class TokenGuard extends ParentTokenGuard implements Guard, GuardContract
 
         $test = HyveKeyCloakRules::where('route', $name)->firstOrFail();
 
-        dd($test);
         if(in_array(Auth::getAllRules(), json_decode($test))){
             return true;
         }
