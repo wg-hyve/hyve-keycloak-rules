@@ -6,7 +6,7 @@ use CloakPort\GuardContract;
 use CloakPort\TokenGuard as ParentTokenGuard;
 use Illuminate\Contracts\Auth\Guard;
 
-class TokenGuard extends ParentTokenGuard implements Guard, GuardContract
+class HyveKeycloakRulesGuard extends ParentTokenGuard implements Guard, GuardContract
 {
     public static function load(array $config): self
     {
@@ -23,5 +23,10 @@ class TokenGuard extends ParentTokenGuard implements Guard, GuardContract
     {
         dd(request()->path());
         return false;
+    }
+
+    public function name(): string
+    {
+        return 'hyve_keycloak_rule';
     }
 }
