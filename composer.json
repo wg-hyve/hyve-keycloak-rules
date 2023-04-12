@@ -25,13 +25,6 @@
     },
     "autoload-dev": {},
     "scripts": {},
-    "extra": {
-        "laravel": {
-            "providers": [
-                "HyveKeycloakRules\\HyveKeyCloakRules"
-            ]
-        }
-    },
     "require-dev": {
         "laravel/framework": "^9.12"
     },
