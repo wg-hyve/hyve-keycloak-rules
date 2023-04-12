@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HyveKeycloakRules\\HyveKeycloakRulesProvider"
+                "HyveKeycloakRules\\HyveKeyCloakRules"
             ]
         }
     },
