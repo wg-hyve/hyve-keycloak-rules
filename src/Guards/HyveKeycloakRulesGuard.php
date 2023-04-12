@@ -1,12 +1,12 @@
 <?php
 
-namespace HyveKeyCloakRules;
+namespace HyveKeyCloakRules\Guards;
 
 use CloakPort\GuardContract;
 use CloakPort\TokenGuard as ParentTokenGuard;
 use Illuminate\Contracts\Auth\Guard;
 
-class HyveKeycloakRulesGuard extends ParentTokenGuard implements Guard, GuardContract
+class HyveKeyCloakRulesGuard extends ParentTokenGuard implements Guard, GuardContract
 {
     public static function load(array $config): self
     {

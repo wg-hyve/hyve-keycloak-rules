@@ -1,5 +1,5 @@
 <?php
-namespace HyveKeyCloakRules;
+namespace HyveKeycloakRules;
 
 use Illuminate\Database\Eloquent\Model;
 class HyveKeyCloakRules extends Model
